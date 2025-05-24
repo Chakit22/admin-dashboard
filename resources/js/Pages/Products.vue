@@ -6,7 +6,7 @@ import PrimaryButton from "@/Components/PrimaryButton.vue";
 import TextInput from "@/Components/TextInput.vue";
 import { Head, Link, useForm } from "@inertiajs/vue3";
 
-// Define props to receive products from the backend
+// Define props to receive products from the backend. Name of the prop is products as passed from the backend.
 const props = defineProps({
     products: {
         type: Array,

@@ -27,6 +27,7 @@ Route::middleware('web')->group(function () {
     require __DIR__.'/web/dashboard.php';
     require __DIR__.'/web/products.php';
     require __DIR__.'/web/profile.php';
+    require __DIR__.'/web/order.php';
     
     // Include authentication routes last
     require __DIR__.'/auth.php';
