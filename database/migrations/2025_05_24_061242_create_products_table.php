@@ -13,9 +13,12 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name');          // e.g., "Nike Dunk Low Panda"
+            $table->string('brand');         // e.g., "Nike"
+            $table->string('size');          // e.g., "US 10"
             $table->decimal('price', 10, 2);
-            $table->string('image_url');
+            $table->string('image')->nullable();  // Store the image path
+            $table->boolean('is_approved')->default(false);
             $table->timestamps();
         });
     }
